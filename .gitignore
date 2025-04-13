@@ -1,0 +1,57 @@
+# Node modules (both backend and frontend)
+node_modules/
+**/node_modules/
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Runtime files
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+# Environment variables
+.env
+.env.* 
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Build files
+dist/
+build/
+public/build/
+public/static/
+
+# Cache
+.cache/
+.next/
+.vite/
+*.tsbuildinfo
+
+# Coverage reports
+coverage/
+
+# React-specific
+*.env.local
+*.env.development.local
+*.env.test.local
+*.env.production.local
+
+# Editor files
+.idea/
+.vscode/
+*.swp
+
+# MongoDB data dump (if any)
+dump/
+
+# Optional: Ignore uploads/images if generated dynamically
+uploads/
+images/

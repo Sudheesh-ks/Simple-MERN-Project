@@ -1,12 +1,13 @@
 import express from 'express';
 import { connectDB } from './config/db.js';
+import Productrouter from './routes/productRoute.js';
 
 const app = express();
 
 
-app.get('/', (req, res) => {
-    res.send('SERVER IS READY')
-})
+app.use(express.json()); // allows us to accept JSON data in the body
+
+app.use('/api/products', Productrouter)
 
 connectDB();
 
